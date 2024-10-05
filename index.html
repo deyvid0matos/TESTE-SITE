@@ -156,17 +156,22 @@
         <section class="formulario" id="formulario">
             <div class="interface">
                 <h2 class="titulo">FALA <span>COMIGO.</span></h2>
-                
-                <form action="">
-                    <input type="text" name="" id="" required placeholder="Seu Nome:">
-                    <input type="text" name="" id="" required placeholder="Seu Email:">
-                    <input type="text" name="" id="" placeholder="Seu Contato:">
-                    <textarea name="" id="" required placeholder="Sua Mensagem"></textarea>
+                <form action="enviar_email.php" method="POST" id="contactForm">
+                    <input type="text" name="nome" id="nome" required placeholder="Seu Nome:">
+                    <input type="email" name="email" id="email" required placeholder="Seu Email:">
+                    <input type="text" name="contato" id="contato" placeholder="Seu Contato:">
+                    <textarea name="mensagem" id="mensagem" required placeholder="Sua Mensagem"></textarea>
                     <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
                 </form>
-
             </div>
         </section>
+
+        <div id="popup" class="popup">
+            <button class="close" onclick="closePopup()">X</button>
+            <div id="popup-message"></div>
+            <a href="index.php" class="home">Home</a>
+        </div>
+        
     </main>
 
     <!-- RODA PÉ DO SITE-->

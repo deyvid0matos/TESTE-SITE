@@ -399,6 +399,40 @@ form .btn-enviar input:hover{ /* PARA BOTAR EFEITO NO BOX*/
     transition: .2s;
 }
 
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+    z-index: 1000;
+}
+.popup .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 50%;
+}
+.popup .home {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
 
 /* ESTILO RODAPÉ */
 
