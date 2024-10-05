@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mensagem = htmlspecialchars($_POST['mensagem']);
 
     // Configurações de envio
-    $para = "seu-email@dominio.com";  // Substitua pelo seu endereço de email
+    $para = "deyvid54@live.com";  // Substitua pelo seu endereço de email
     $assunto = "Contato de: $nome";
     $corpo = "Nome: $nome\nEmail: $email\nContato: $contato\n\nMensagem:\n$mensagem";
     $headers = "From: $email";
